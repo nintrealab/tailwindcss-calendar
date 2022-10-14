@@ -9225,12 +9225,12 @@ span,
   font-style: normal;
   font-weight: 900;
   font-display: "block";
-  src: url("/fonts/solid-900.eot");
-  src: url("/fonts/solid-900.eot?#iefix") format("embedded-opentype"), 
-        url("/fonts/solid-900.woff2") format("woff2"), 
-        url("/fonts/solid-900.woff") format("woff"), 
-        url("/fonts/solid-900.ttf") format("truetype"), 
-        url("/fonts/solid-900.svg#nicons") format("svg");
+  src: url("fonts/solid-900.eot");
+  src: url("fonts/solid-900.eot?#iefix") format("embedded-opentype"), 
+        url("fonts/solid-900.woff2") format("woff2"), 
+        url("fonts/solid-900.woff") format("woff"), 
+        url("fonts/solid-900.ttf") format("truetype"), 
+        url("fonts/solid-900.svg#nicons") format("svg");
 }
 .ni,
 .nis {
@@ -9247,8 +9247,8 @@ span,
   font-style: normal;
   font-weight: 400;
   font-display: "block";
-  src: url("/fonts/regular-400.eot");
-  src: url("/fonts/regular-400.eot?#iefix") format("embedded-opentype"), url("/fonts/regular-400.woff2") format("woff2"), url("/fonts/regular-400.woff") format("woff"), url("/fonts/regular-400.ttf") format("truetype"), url("/fonts/regular-400.svg#nicons") format("svg");
+  src: url("fonts/regular-400.eot");
+  src: url("fonts/regular-400.eot?#iefix") format("embedded-opentype"), url("fonts/regular-400.woff2") format("woff2"), url("fonts/regular-400.woff") format("woff"), url("fonts/regular-400.ttf") format("truetype"), url("fonts/regular-400.svg#nicons") format("svg");
 }
 .ni,
 .nir {
@@ -9265,8 +9265,8 @@ span,
   font-style: normal;
   font-weight: 300;
   font-display: "block";
-  src: url("/fonts/light-300.eot");
-  src: url("/fonts/light-300.eot?#iefix") format("embedded-opentype"), url("/fonts/light-300.woff2") format("woff2"), url("/fonts/light-300.woff") format("woff"), url("/fonts/light-300.ttf") format("truetype"), url("/fonts/light-300.svg#nicons") format("svg");
+  src: url("fonts/light-300.eot");
+  src: url("fonts/light-300.eot?#iefix") format("embedded-opentype"), url("fonts/light-300.woff2") format("woff2"), url("fonts/light-300.woff") format("woff"), url("fonts/light-300.ttf") format("truetype"), url("fonts/light-300.svg#nicons") format("svg");
 }
 .ni,
 .nil {
@@ -9279,8 +9279,8 @@ span,
   font-style: normal;
   font-weight: 400;
   font-display: "block";
-  src: url("/fonts/brands-400.eot");
-  src: url("/fonts/brands-400.eot?#iefix") format("embedded-opentype"), url("/fonts/brands-400.woff2") format("woff2"), url("/fonts/brands-400.woff") format("woff"), url("/fonts/brands-400.ttf") format("truetype"), url("/fonts/brands-400.svg#nicons") format("svg");
+  src: url("fonts/brands-400.eot");
+  src: url("fonts/brands-400.eot?#iefix") format("embedded-opentype"), url("fonts/brands-400.woff2") format("woff2"), url("fonts/brands-400.woff") format("woff"), url("fonts/brands-400.ttf") format("truetype"), url("fonts/brands-400.svg#nicons") format("svg");
 }
 .ni,
 .nib {
