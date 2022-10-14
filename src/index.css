@@ -352,13 +352,13 @@
 }
 
 /* Change Year Buttons */
-.chevron-arrow-left::before {
+/* .chevron-arrow-left::before {
     @apply content-["\f104"] font-iconL text-xl
-}
+} */
 
-.chevron-arrow-right::before {
+/* .chevron-arrow-right::before {
     @apply content-["\f105"] font-iconL text-xl
-}
+} */
 
 /* Even Toggle  */
 #eventListToggler {
