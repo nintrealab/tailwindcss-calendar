@@ -1,4 +1,6 @@
 # tailwindcss-calendar
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar?ref=badge_shield)
+
 
 ## Installation
 ### CDN Requirement
@@ -67,3 +69,7 @@ node_modules/tailwindcss-calendar/{source_code_here}
 ```
 
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar?ref=badge_large)
