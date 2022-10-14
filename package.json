@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-calendar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "tailwindcss calendar ui using evo-calendar ",
   "main": "index.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/nintrealab/tailwindcss-calendar/issues"
   },
-  "homepage": "https://github.com/nintrealab/tailwindcss-calendar#readme",
+  "homepage": "https://nintrealab.github.io/tailwindcss-calendar/",
   "devDependencies": {
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
