@@ -1,0 +1,671 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --ni-sky-50:250, 248, 251;
+    --ni-sky-100:224, 242, 254;
+    --ni-sky-200:186, 230, 253;
+    --ni-sky-300:125, 211, 252;
+    --ni-sky-400:56, 189, 248;
+    --ni-sky-500:14, 165, 233;
+    --ni-sky-600:2, 132, 199;
+    --ni-sky-700:3, 105, 161;
+    --ni-sky-800:7, 89, 133;
+    --ni-sky-900:12, 74, 110;
+
+    --ni-red-50:254, 242, 242;
+    --ni-red-100:254, 226, 226;
+    --ni-red-200:254, 202, 202;
+    --ni-red-300:252, 165, 165;
+    --ni-red-400:248, 113, 113;
+    --ni-red-500:239, 68, 68;
+    --ni-red-600:220, 38, 38;
+    --ni-red-700:185, 28, 28;
+    --ni-red-800:153, 27, 27;
+    --ni-red-900:127, 29, 29;
+
+    --ni-greengray-50:236, 253, 245;
+    --ni-greengray-100:209, 250, 229;
+    --ni-greengray-200:167, 243, 208;
+    --ni-greengray-300:110, 231, 183;
+    --ni-greengray-400:52, 211, 153;
+    --ni-greengray-500:16, 185, 129;
+    --ni-greengray-600:5, 150, 105;
+    --ni-greengray-700:4, 120, 87;
+    --ni-greengray-800:6, 95, 70;
+    --ni-greengray-900:6, 78, 59;
+
+    --ni-orange-50:255, 247, 237;
+    --ni-orange-100:255, 237, 213;
+    --ni-orange-200:254, 215, 170;
+    --ni-orange-300:253, 186, 116;
+    --ni-orange-400:251, 146, 60;
+    --ni-orange-500:249, 115, 22;
+    --ni-orange-600:234, 88, 12;
+    --ni-orange-700:194, 65, 12;
+    --ni-orange-800:154, 52, 18;
+    --ni-orange-900:124, 45, 18;
+
+    /* primary */
+    --ni-primary-50:var(--ni-sky-50);
+    --ni-primary-100:var(--ni-sky-100);
+    --ni-primary-200:var(--ni-sky-200);
+    --ni-primary-300:var(--ni-sky-300);
+    --ni-primary-400:var(--ni-sky-400);
+    --ni-primary-500:var(--ni-sky-500);
+    --ni-primary-600:var(--ni-sky-600);
+    --ni-primary-700:var(--ni-sky-700);
+    --ni-primary-800:var(--ni-sky-800);
+    --ni-primary-900:var(--ni-sky-900);
+
+    /* success */
+    --ni-success-50:var(--ni-greengray-50);
+    --ni-success-100:var(--ni-greengray-100);
+    --ni-success-200:var(--ni-greengray-200);
+    --ni-success-300:var(--ni-greengray-300);
+    --ni-success-400:var(--ni-greengray-400);
+    --ni-success-500:var(--ni-greengray-500);
+    --ni-success-600:var(--ni-greengray-600);
+    --ni-success-700:var(--ni-greengray-700);
+    --ni-success-800:var(--ni-greengray-800);
+    --ni-success-900:var(--ni-greengray-900);
+    /* danger */
+    --ni-danger-50:var(--ni-red-50);
+    --ni-danger-100:var(--ni-red-100);
+    --ni-danger-200:var(--ni-red-200);
+    --ni-danger-300:var(--ni-red-300);
+    --ni-danger-400:var(--ni-red-400);
+    --ni-danger-500:var(--ni-red-500);
+    --ni-danger-600:var(--ni-red-600);
+    --ni-danger-700:var(--ni-red-700);
+    --ni-danger-800:var(--ni-red-800);
+    --ni-danger-900:var(--ni-red-900);
+    /* warning */
+    --ni-warning-50:var(--ni-orange-50);
+    --ni-warning-100:var(--ni-orange-100);
+    --ni-warning-200:var(--ni-orange-200);
+    --ni-warning-300:var(--ni-orange-300);
+    --ni-warning-400:var(--ni-orange-400);
+    --ni-warning-500:var(--ni-orange-500);
+    --ni-warning-600:var(--ni-orange-600);
+    --ni-warning-700:var(--ni-orange-700);
+    --ni-warning-800:var(--ni-orange-800);
+    --ni-warning-900:var(--ni-orange-900);
+}
+
+
+@font-face {
+    font-family: "niCons Solid";
+    font-style: normal;
+    font-weight: 900;
+    font-display: "block";
+    src: url("/fonts/solid-900.eot");
+    src: url("/fonts/solid-900.eot?#iefix") format("embedded-opentype"), 
+          url("/fonts/solid-900.woff2") format("woff2"), 
+          url("/fonts/solid-900.woff") format("woff"), 
+          url("/fonts/solid-900.ttf") format("truetype"), 
+          url("/fonts/solid-900.svg#nicons") format("svg");
+}
+@font-face {
+    font-family: "niCons Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: "block";
+    src: url("/fonts/regular-400.eot");
+    src: url("/fonts/regular-400.eot?#iefix") format("embedded-opentype"), url("/fonts/regular-400.woff2") format("woff2"), url("/fonts/regular-400.woff") format("woff"), url("/fonts/regular-400.ttf") format("truetype"), url("/fonts/regular-400.svg#nicons") format("svg");
+}
+@font-face {
+    font-family: "niCons light";
+    font-style: normal;
+    font-weight: 300;
+    font-display: "block";
+    src: url("/fonts/light-300.eot");
+    src: url("/fonts/light-300.eot?#iefix") format("embedded-opentype"), url("/fonts/light-300.woff2") format("woff2"), url("/fonts/light-300.woff") format("woff"), url("/fonts/light-300.ttf") format("truetype"), url("/fonts/light-300.svg#nicons") format("svg");
+}
+
+@font-face {
+    font-family: "niCons brands";
+    font-style: normal;
+    font-weight: 400;
+    font-display: "block";
+    src: url("/fonts/brands-400.eot");
+    src: url("/fonts/brands-400.eot?#iefix") format("embedded-opentype"), url("/fonts/brands-400.woff2") format("woff2"), url("/fonts/brands-400.woff") format("woff"), url("/fonts/brands-400.ttf") format("truetype"), url("/fonts/brands-400.svg#nicons") format("svg");
+}
+
+
+.mainCard{ /* main */
+    @apply w-full mx-auto px-5 pb-5;
+}
+
+.cardContainer{ /* Container */
+    @apply grid gap-5 sm:mt-5;
+}
+
+.eachCard{ /* each card */
+    @apply bg-white dark:bg-gray-800 rounded shadow-md p-5;
+}
+
+
+
+
+/*-------------------------------------
+|   EvoCalendar with Tailwindcss 
+|--------------------------------------
+|   author  : Leat Sophat
+|   date    : 10-13-2022
+|   license : MIT
+*/
+
+
+/*======================================
+|   Main Layout
+|   mainClass   :   evoCalendar
+|=======================================
+|   Control Main Layout
+|   
+*/
+.evoCalendar {
+    @apply flex flex-row relative mx-auto overflow-hidden transition-all duration-500 rounded-lg
+}
+
+
+/*======================================
+|   Left Side Layout Sidebar
+|   mainClass   :   calendar-sidebar
+|=======================================
+|   Control everything on Left Sidebar
+|   
+*/
+.calendar-sidebar {
+    @apply absolute z-10 top-0 left-0 w-52 flex-shrink-0 flex flex-col gap-2 border-r sm:relative transition-all duration-500
+}
+
+.calendar-year {
+    @apply flex gap-2 items-center justify-center py-3
+}
+
+.month-list {
+    @apply mt-2
+}
+
+.calendar-months {
+    @apply w-full flex-shrink-0 flex flex-col gap-1 pb-3 px-2 [&>*]:rounded [&>*]:px-5 [&>*]:py-1 transition-all
+}
+
+.month {
+    @apply transition-all duration-300 border border-transparent rounded-lg
+}
+
+.sidebar-hide >.calendar-sidebar {
+    @apply absolute -left-52 sm:relative translate-x-0 sm:w-10
+}
+
+.sidebar-hide >.calendar-sidebar >#sidebarToggler {
+    @apply absolute top-3 sm:-right-52
+}
+
+
+
+
+/*======================================
+|   Centered Content Layout Sidebar
+|   mainClass   :   calendar-inner
+|=======================================
+|   Control Calendar Table
+|   
+*/
+
+.calendar-inner {
+    @apply w-full flex h-full p-5 transition-all duration-500
+}
+
+.calendar-table {
+    @apply w-full
+}
+
+.calendar-inner table tr td {
+    @apply p-0 pt-5 h-16 text-center
+}
+
+.current-date {
+    @apply text-xl font-content font-roboto
+}
+
+.calendar-header {
+    @apply  [&>*:first-child]:text-[rgba(var(--ni-danger-500))]  [&>*first-child]:!text-left  [&>*:last-child]:text-[rgba(var(--ni-warning-500))]
+}
+
+.calendar-header-day {
+    @apply text-center font-medium h-auto py-2 
+}
+
+.calendar-body {
+    @apply [&>*>.day]:text-slate-700 [&>*>.day]:dark:text-slate-200
+    [&>.calendar-day:first-child>.day]:text-[rgba(var(--ni-danger-500))] 
+    [&>.calendar-day:last-child>.day]:text-[rgba(var(--ni-warning-500))]
+    
+}
+
+.calendar-day {
+    @apply w-10 h-10 items-center justify-center
+}
+
+.day {
+    @apply w-full h-full min-h-[3rem] relative text-center font-medium
+}
+
+.day:hover {
+    @apply transition-all scale-125 font-medium after:absolute after:content-[''] after:w-8 after:h-8 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:border after:border-transparent after:-top-1 after:z-0
+}
+
+.event-indicator {
+    @apply absolute flex gap-1 left-1/2 -translate-x-1/2  z-[1] [&>.type-bullet]:hidden  [&>.type-bullet:nth-child(1)]:block  [&>.type-bullet:nth-child(2)]:block  [&>.type-bullet:nth-child(3)]:block
+}
+
+.type-bullet {
+    @apply [&>div]:w-2 [&>div]:rounded-full [&>div]:h-2
+}
+
+
+/*======================================
+|   Active Event
+|=======================================
+|   Control Event Point
+|   
+*/
+
+.day.calendar-active {
+    @apply animate-bounce transition-all font-medium after:absolute after:content-[''] after:w-8 after:h-8 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:border after:border-transparent after:-top-1 after:z-0
+}
+
+
+
+
+/*======================================
+|   Right Side Layout Sidebar
+|   mainClass   : calendar-events
+|=======================================
+|   Control everything on Right Sidebar
+|   
+*/
+
+.calendar-events {
+    @apply transition-all duration-500 
+    flex-shrink-0 w-64 p-5 border-l 
+    overflow-y-auto overflow-x-hidden 
+    min-h-[551px] absolute xl:relative right-0 top-0 h-full z-10
+}
+
+.event-header {
+    @apply p-1 text-xl font-content font-roboto !font-medium
+}
+
+.event-list {
+    @apply flex flex-col gap-4 [&>.event-container]:p-2 mt-5
+}
+
+.event-container {
+    @apply border border-transparent rounded-md min-w-[215px] transition-all duration-500 flex gap-2 relative
+}
+
+.event-empty >p {
+    @apply text-[14px]
+}
+
+.event-hide>.calendar-events {
+    @apply translate-x-64 w-0
+}
+
+.event-title {
+    @apply !font-medium font-sans !text-base
+}
+
+
+.event-desc {
+    @apply text-sm
+}
+
+.event-icon {
+    @apply w-3 h-3 flex flex-shrink-0 mt-2
+}
+
+.event-icon >dot-icon {
+    @apply w-3 h-3 flex items-center justify-center rounded-md
+}
+.event-info {
+    @apply flex flex-col
+}
+.badge-event {
+    @apply absolute -top-3 right-2 border rounded-full leading-3 py-0.5 px-1 text-[12px] max-w-[3rem] line-clamp-1
+}
+
+/*======================================
+|   Buttons
+|   mainClass   : icon-button
+|=======================================
+|   Control all Buttons
+|   
+*/
+.icon-button {
+    @apply w-7 h-7 flex items-center justify-center rounded-md transition-all border border-transparent bg-transparent
+}
+
+/* Change Year Buttons */
+.chevron-arrow-left::before {
+    @apply content-["\f104"] font-iconL text-xl
+}
+
+.chevron-arrow-right::before {
+    @apply content-["\f105"] font-iconL text-xl
+}
+
+/* Even Toggle  */
+#eventListToggler {
+    @apply absolute right-[14.8rem] top-3 z-10 transition-all duration-500 
+}
+
+.event-hide >#eventListToggler {
+    @apply right-3 top-3 z-10 
+}
+
+
+/* Event Toggle Button right sidebar */
+#sidebarToggler {
+    @apply absolute top-3 -right-10 transition-all duration-500 
+    w-7 h-7 flex justify-center items-center 
+    rounded-md border border-transparent;
+}
+
+
+
+/*======================================
+|   Outline Style
+|   mainClass   :calendar-outline
+|=======================================
+|   Control Color and Styling for Outline
+|   
+*/
+
+.calendar-outline .calendar-body,
+.calendar-outline .calendar-header {
+    @apply border-b [&>*]:border-r first:border-l-0
+}
+
+.calendar-outline .month-list {
+    @apply mt-0
+}
+
+.calendar-outline .month {
+    @apply border rounded-md border-transparent
+}
+
+.calendar-outline .calendar-inner {
+    @apply [&>table>*]:border flex w-full h-full transition-all duration-500
+}
+
+.calendar-outline .calendar-header {
+    @apply border-y [&>*]:border-t-0 [&>*first-child]:!text-left 
+}
+
+
+/*======================================
+|   Color and Theme Mode
+|   mainClass   :Defualt,  calendar-outline
+|=======================================
+|   Control Color and Styling
+|   
+*/
+
+/* Defualt */
+.dark .evoCalendar,
+.dark.evoCalendar {
+    @apply bg-slate-800
+}
+
+.event-header {
+    @apply dark:text-slate-200
+}
+
+.calendar-header-day {
+    @apply dark:text-slate-200
+}
+
+.calendar-header-day:first-child {
+    @apply dark:text-[rgba(var(--ni-danger-500))]
+}
+
+.calendar-header-day:last-child {
+    @apply dark:text-[rgba(var(--ni-warning-500))]
+}
+
+
+.current-date {
+    @apply dark:text-white
+}
+
+.event-title {
+    @apply dark:text-slate-100
+}
+
+.calendar-sidebar,
+.calendar-inner,
+.calendar-events {
+    @apply bg-white dark:bg-slate-800 dark:border-slate-500
+}
+
+#sidebarToggler,
+#eventListToggler,
+.icon-button {
+    @apply text-white bg-[rgba(var(--ni-primary-500))] 
+    hover:text-white hover:bg-[rgba(var(--ni-primary-600))] 
+    dark:border-transparent
+    dark:bg-[rgba(var(--ni-primary-500))]
+    dark:hover:bg-[rgba(var(--ni-primary-700))]
+}
+
+
+.active-month {
+    @apply bg-[rgba(var(--ni-primary-500))] text-white
+}
+
+.day.calendar-active {
+    @apply text-[rgba(var(--ni-primary-500))] 
+    after:border-[rgba(var(--ni-primary-500))]
+}
+
+.calendar-year {
+    @apply bg-[rgba(var(--ni-primary-500))] 
+    text-white 
+    [&>p]:text-white
+    [&>p]:dark:text-white
+}
+
+.event-container {
+    @apply bg-white shadow hover:shadow-xl dark:bg-slate-900
+}
+
+.badge-event {
+    @apply  bg-white dark:bg-slate-700
+}
+
+.month {
+    @apply dark:text-slate-300
+}
+
+.day:hover {
+    @apply after:border-[rgba(var(--ni-primary-500))]
+}
+
+/* calendar-outline */
+.calendar-outline .calendar-year {
+    @apply bg-white border-b border-slate-300 
+    text-[rgba(var(--ni-primary-500))] 
+    [&>p]:text-[rgba(var(--ni-primary-500))]
+}
+
+.calendar-outline #sidebarToggler,
+.calendar-outline #eventListToggler,
+.calendar-outline .icon-button {
+    @apply bg-white border-slate-300 
+    text-[rgba(var(--ni-primary-500))] 
+    hover:bg-slate-200 
+    hover:text-slate-800
+}
+
+.calendar-outline .month {
+    @apply hover:border-[rgba(var(--ni-primary-200))] text-slate-500
+}
+
+.calendar-outline .active-month {
+    @apply border border-[rgba(var(--ni-primary-500))] 
+    dark:border-slate-500 
+    bg-white text-[rgba(var(--ni-primary-500))]
+}
+
+.calendar-outline .calendar-header {
+    @apply [&>*:first-child]:text-[rgba(var(--ni-danger-500))] [&>*:last-child]:text-[rgba(var(--ni-warning-500))]
+}
+
+.event-desc,.event-empty {
+    @apply dark:text-slate-400
+}
+
+
+.button {
+    @apply !w-auto  text-sm  uppercase  border-2  border-transparent  bg-transparent  py-1.5  px-3  rounded-md  transition-all  leading-5 select-none cursor-pointer;
+}
+
+.button.-outline-primary {
+    @apply  focus:border-[color:rgba(var(--ni-primary-600))] 
+        border-[color:rgba(var(--ni-primary-500))] 
+        text-[color:rgba(var(--ni-primary-500))]
+        dark:border-[color:rgba(var(--ni-primary-800))]
+        dark:text-[color:rgba(var(--ni-primary-800))]
+}
+.button.-outline-secondary{
+    @apply  focus:border-[color:rgba(var(--ni-secondary-600))] 
+        border-[color:rgba(var(--ni-secondary-500))] 
+        text-[color:rgba(var(--ni-secondary-500))]
+        dark:border-[color:rgba(var(--ni-secondary-800))]
+        dark:text-[color:rgba(var(--ni-secondary-800))]
+}
+.button.-outline-warning{
+    @apply  focus:border-[color:rgba(var(--ni-warning-600))] 
+        border-[color:rgba(var(--ni-warning-500))] 
+        text-[color:rgba(var(--ni-warning-500))]
+        dark:border-[color:rgba(var(--ni-warning-800))]
+        dark:text-[color:rgba(var(--ni-warning-800))]
+}
+.button.-outline-danger{
+    @apply  focus:border-[color:rgba(var(--ni-danger-600))] 
+        border-[color:rgba(var(--ni-danger-500))] 
+        text-[color:rgba(var(--ni-danger-500))]
+        dark:border-[color:rgba(var(--ni-danger-800))]
+        dark:text-[color:rgba(var(--ni-danger-800))]
+}
+.button.-outline-success{
+    @apply  focus:border-[color:rgba(var(--ni-success-600))] 
+        border-[color:rgba(var(--ni-success-500))] 
+        text-[color:rgba(var(--ni-success-500))]
+        dark:border-[color:rgba(var(--ni-success-800))]
+        dark:text-[color:rgba(var(--ni-success-800))]
+}
+.button.-outline-info{
+    @apply  focus:border-[color:rgba(var(--ni-info-600))] 
+        border-[color:rgba(var(--ni-info-500))] 
+        text-[color:rgba(var(--ni-info-500))]
+        dark:border-[color:rgba(var(--ni-info-800))]
+        dark:text-[color:rgba(var(--ni-info-800))]
+}
+
+
+
+.button.-primary{
+    @apply focus:bg-[color:rgba(var(--ni-primary-600))] 
+        hover:bg-[color:rgba(var(--ni-primary-600))] 
+        bg-[color:rgba(var(--ni-primary-500))] 
+        dark:bg-[color:rgba(var(--ni-primary-500))]
+        text-white
+}
+.button.-secondary{
+    @apply focus:bg-[color:rgba(var(--ni-secondary-600))] 
+        hover:bg-[color:rgba(var(--ni-secondary-600))] 
+        bg-[color:rgba(var(--ni-secondary-500))] 
+        dark:bg-[color:rgba(var(--ni-secondary-500))]
+        text-white
+}
+.button.-warning{
+    @apply focus:bg-[color:rgba(var(--ni-warning-600))] 
+        hover:bg-[color:rgba(var(--ni-warning-600))] 
+        bg-[color:rgba(var(--ni-warning-500))] 
+        dark:bg-[color:rgba(var(--ni-warning-500))]
+        text-white
+}
+.button.-danger{
+    @apply focus:bg-[color:rgba(var(--ni-danger-600))] 
+        hover:bg-[color:rgba(var(--ni-danger-600))] 
+        bg-[color:rgba(var(--ni-danger-500))] 
+        dark:bg-[color:rgba(var(--ni-danger-500))]
+        text-white
+}
+.button.-success{
+    @apply focus:bg-[color:rgba(var(--ni-success-600))] 
+        hover:bg-[color:rgba(var(--ni-success-600))] 
+        bg-[color:rgba(var(--ni-success-500))] 
+        dark:bg-[color:rgba(var(--ni-success-500))]
+        text-white
+}
+.button.-info{
+    @apply focus:bg-[color:rgba(var(--ni-info-600))] 
+        bg-[color:rgba(var(--ni-info-500))] 
+        dark:bg-[color:rgba(var(--ni-info-500))]
+        text-white
+}
+
+
+
+
+.button.-gradient-primary{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-primary-400))] 
+        to-[color:rgba(var(--ni-primary-500))]
+        hover:from-[color:rgba(var(--ni-primary-500))] 
+        hover:to-[color:rgba(var(--ni-primary-500))]
+}
+.button.-gradient-secondary{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-secondary-400))] 
+        to-[color:rgba(var(--ni-secondary-500))]
+        hover:from-[color:rgba(var(--ni-secondary-500))] 
+        hover:to-[color:rgba(var(--ni-secondary-500))]
+}
+.button.-gradient-warning{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-warning-400))] 
+        to-[color:rgba(var(--ni-warning-500))]
+        hover:from-[color:rgba(var(--ni-warning-500))] 
+        hover:to-[color:rgba(var(--ni-warning-500))]
+}
+.button.-gradient-danger{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-danger-400))] 
+        to-[color:rgba(var(--ni-danger-500))]
+        hover:from-[color:rgba(var(--ni-danger-500))] 
+        hover:to-[color:rgba(var(--ni-danger-500))]
+}
+.button.-gradient-success{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-success-400))] 
+        to-[color:rgba(var(--ni-success-500))]
+        hover:from-[color:rgba(var(--ni-success-500))] 
+        hover:to-[color:rgba(var(--ni-success-500))]
+}
+.button.-gradient-info{
+    @apply  border-none text-white
+        from-[color:rgba(var(--ni-info-400))] 
+        to-[color:rgba(var(--ni-info-500))]
+        hover:from-[color:rgba(var(--ni-info-500))] 
+        hover:to-[color:rgba(var(--ni-info-500))]
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='css/calendar.css'>
+    <title>tailwindcss-calendar</title>
+</head>
+<body>
+    <div class="mainCard">
+        <div class="cardContainer grid-cols-1">
+            <div class="eachCard col-span-1 p-0 shadow-none">
+                <div id="evoCalendar" class="evoCalendar border"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script>
+        $("#evoCalendar").evoCalendar({
+            theme: 'Orange Coral',  
+            language: 'km',
+            sidebarDisplayDefault: false,
+            calendarEvents: [
+                {
+                    id: '1', // Event's ID (required)
+                    name: "New Year", // Event name (required)
+                    date: "October/1/2022", // Event date (required)
+                    type: "holiday", // Event type (required)
+                    everyYear: true // Same event every year (optional)
+                },
+                {
+                    id: '2',
+                    name: "Event Name Event Name Event Name",
+                    date: ["October/13/2022", "October/15/2022"], // Date range
+                    description: "Description", // Event description (optional)
+                    badge: "3Days",
+                    type: "event",
+                    color: "red" // Event custom color (optional)
+                },
+                {
+                    id: '2',
+                    name: "បុណ្យគម្រប់ខួបកំណើត ​នាយកធុច",
+                    date: ["October/15/2022", "October/16/2022"], // Date range
+                    description: "កម្មវិធីនៅគេហដ្ឋានខាងស្រី", // Event description (optional)
+                    badge: "២ថ្ងៃ",
+                    type: "event",
+                    color: "pink" // Event custom color (optional)
+                },
+            ]
+        });
+    </script>
+</body>
+</html>

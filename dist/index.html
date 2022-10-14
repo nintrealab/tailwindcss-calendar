@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='css/nintrea@icons.css'>
+    <link rel="stylesheet" href='css/calendar.css'>
+    <title>tailwindcss-calendar</title>
+<body>
+    <div class="mainCard">
+        <div class="cardContainer grid-cols-1">
+            <div class="eachCard col-span-1 p-0 !shadow-none bg-transparent">
+                <div class="max-w-6xl flex flex-col gap-4 items-center justify-center min-h-[calc(100vh_-_7rem)] mx-auto">
+                    <h1 class="text-2xl font-medium text-left">Tailwindcss Calendar with EvoCalendar</h1>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
+                            <img src="https://telegra.ph/file/2d8a1cef611babc8ee0c3.png" class="object-cover" alt="">
+                        </div>
+                        <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
+                            <img src="https://telegra.ph/file/2fb0581c7f86c4e7a219c.png" class="object-cover" alt="">
+                        </div>
+                    </div>
+                    <h1 class="text-2xl font-medium text-left">Demo Calendar</h1>
+                    
+                    <div>
+                        <button class="button -primary" onclick="theme()">Theme</button>
+                    </div>
+                    <div id="evoCalendar" class="evoCalendar border w-full dark"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="js/evo-calendar.js"></script>
+    <script>
+
+
+        var theme = () => {
+            var setTheme = document.querySelector('#evoCalendar')
+            setTheme.classList.toggle('dark')
+        }
+
+        $("#evoCalendar").evoCalendar(
+                {
+                    language                : 'en', // km
+                    sidebarDisplayDefault   : true,
+                    calendarEvents: [
+                        {
+                            id          : '1',              // Event's ID (required)
+                            name        : "New Year",       // Event name (required)
+                            date        : "October/1/2022", // Event date (required)
+                            type        : "holiday",        // Event type (required)
+                            everyYear   : true,             // Same event every year (optional)
+                            color       : "pink"            // optional
+                        },
+                        {
+                            id          : '2',
+                            name        : "Event Name Event Name Event Name",
+                            date        : ["October/13/2022", "October/15/2022"], // Date range
+                            description : "Description",
+                            badge       : "3Days",
+                            type        : "event",
+                            color       : "red"
+                        },
+                        {
+                            id          : '2',
+                            name        : "បុណ្យគម្រប់ខួបកំណើត ​នាយកធុច",
+                            date        : ["October/15/2022", "October/16/2022"],
+                            description : "កម្មវិធីនៅគេហដ្ឋានខាងស្រី",
+                            badge       : "២ថ្ងៃ",
+                            type        : "event",
+                            color       : "pink"
+                        },
+                    ]
+                }
+            );
+
+
+        
+    </script>
+</body>
+</html>

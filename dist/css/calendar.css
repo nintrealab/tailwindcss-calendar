@@ -1,0 +1,1942 @@
+/*
+! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+*/
+
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+}
+
+::before,
+::after {
+  --tw-content: '';
+}
+
+/*
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
+*/
+
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+*/
+
+body {
+  margin: 0;
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
+}
+
+/*
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
+*/
+
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  border-top-width: 1px;
+  /* 3 */
+}
+
+/*
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+
+abbr:where([title]) {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
+Add the correct font weight in Edge and Safari.
+*/
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
+*/
+
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/*
+Add the correct font size in all browsers.
+*/
+
+small {
+  font-size: 80%;
+}
+
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+*/
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
+*/
+
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+  border-collapse: collapse;
+  /* 3 */
+}
+
+/*
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
+*/
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  font-weight: inherit;
+  /* 1 */
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  padding: 0;
+  /* 3 */
+}
+
+/*
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+
+button,
+select {
+  text-transform: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
+*/
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+  -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
+}
+
+/*
+Use the modern Firefox focus style for all focusable elements.
+*/
+
+:-moz-focusring {
+  outline: auto;
+}
+
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+*/
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/*
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+
+progress {
+  vertical-align: baseline;
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+
+[type='search'] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Add the correct display in Chrome and Safari.
+*/
+
+summary {
+  display: list-item;
+}
+
+/*
+Removes the default spacing and border for appropriate elements.
+*/
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+ol,
+ul,
+menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Prevent resizing textareas horizontally by default.
+*/
+
+textarea {
+  resize: vertical;
+}
+
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
+/*
+Set the default cursor for buttons.
+*/
+
+button,
+[role="button"] {
+  cursor: pointer;
+}
+
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
+
+:disabled {
+  cursor: default;
+}
+
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  /* 1 */
+  vertical-align: middle;
+  /* 2 */
+}
+
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+*, ::before, ::after {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+::backdrop {
+  --tw-border-spacing-x: 0;
+  --tw-border-spacing-y: 0;
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
+  --tw-ring-offset-width: 0px;
+  --tw-ring-offset-color: #fff;
+  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow: 0 0 #0000;
+  --tw-ring-shadow: 0 0 #0000;
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
+}
+
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.min-h-\[calc\(100vh_-_7rem\)\] {
+  min-height: calc(100vh - 7rem);
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.shadow-none {
+  --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.\!shadow-none {
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow) !important;
+}
+
+.shadow-md {
+  --tw-shadow: -40px 40px 160px 0 rgb(0 0 0 / 2%), -8px 8px 15px 0 rgb(120 120 120 / 4%), 3px 3px 30px 0 rgb(0 0 0 / 4%);
+  --tw-shadow-colored: -40px 40px 160px 0 var(--tw-shadow-color), -8px 8px 15px 0 var(--tw-shadow-color), 3px 3px 30px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+:root {
+  --ni-sky-50:250, 248, 251;
+  --ni-sky-100:224, 242, 254;
+  --ni-sky-200:186, 230, 253;
+  --ni-sky-300:125, 211, 252;
+  --ni-sky-400:56, 189, 248;
+  --ni-sky-500:14, 165, 233;
+  --ni-sky-600:2, 132, 199;
+  --ni-sky-700:3, 105, 161;
+  --ni-sky-800:7, 89, 133;
+  --ni-sky-900:12, 74, 110;
+  --ni-red-50:254, 242, 242;
+  --ni-red-100:254, 226, 226;
+  --ni-red-200:254, 202, 202;
+  --ni-red-300:252, 165, 165;
+  --ni-red-400:248, 113, 113;
+  --ni-red-500:239, 68, 68;
+  --ni-red-600:220, 38, 38;
+  --ni-red-700:185, 28, 28;
+  --ni-red-800:153, 27, 27;
+  --ni-red-900:127, 29, 29;
+  --ni-greengray-50:236, 253, 245;
+  --ni-greengray-100:209, 250, 229;
+  --ni-greengray-200:167, 243, 208;
+  --ni-greengray-300:110, 231, 183;
+  --ni-greengray-400:52, 211, 153;
+  --ni-greengray-500:16, 185, 129;
+  --ni-greengray-600:5, 150, 105;
+  --ni-greengray-700:4, 120, 87;
+  --ni-greengray-800:6, 95, 70;
+  --ni-greengray-900:6, 78, 59;
+  --ni-orange-50:255, 247, 237;
+  --ni-orange-100:255, 237, 213;
+  --ni-orange-200:254, 215, 170;
+  --ni-orange-300:253, 186, 116;
+  --ni-orange-400:251, 146, 60;
+  --ni-orange-500:249, 115, 22;
+  --ni-orange-600:234, 88, 12;
+  --ni-orange-700:194, 65, 12;
+  --ni-orange-800:154, 52, 18;
+  --ni-orange-900:124, 45, 18;
+  /* primary */
+  --ni-primary-50:var(--ni-sky-50);
+  --ni-primary-100:var(--ni-sky-100);
+  --ni-primary-200:var(--ni-sky-200);
+  --ni-primary-300:var(--ni-sky-300);
+  --ni-primary-400:var(--ni-sky-400);
+  --ni-primary-500:var(--ni-sky-500);
+  --ni-primary-600:var(--ni-sky-600);
+  --ni-primary-700:var(--ni-sky-700);
+  --ni-primary-800:var(--ni-sky-800);
+  --ni-primary-900:var(--ni-sky-900);
+  /* success */
+  --ni-success-50:var(--ni-greengray-50);
+  --ni-success-100:var(--ni-greengray-100);
+  --ni-success-200:var(--ni-greengray-200);
+  --ni-success-300:var(--ni-greengray-300);
+  --ni-success-400:var(--ni-greengray-400);
+  --ni-success-500:var(--ni-greengray-500);
+  --ni-success-600:var(--ni-greengray-600);
+  --ni-success-700:var(--ni-greengray-700);
+  --ni-success-800:var(--ni-greengray-800);
+  --ni-success-900:var(--ni-greengray-900);
+  /* danger */
+  --ni-danger-50:var(--ni-red-50);
+  --ni-danger-100:var(--ni-red-100);
+  --ni-danger-200:var(--ni-red-200);
+  --ni-danger-300:var(--ni-red-300);
+  --ni-danger-400:var(--ni-red-400);
+  --ni-danger-500:var(--ni-red-500);
+  --ni-danger-600:var(--ni-red-600);
+  --ni-danger-700:var(--ni-red-700);
+  --ni-danger-800:var(--ni-red-800);
+  --ni-danger-900:var(--ni-red-900);
+  /* warning */
+  --ni-warning-50:var(--ni-orange-50);
+  --ni-warning-100:var(--ni-orange-100);
+  --ni-warning-200:var(--ni-orange-200);
+  --ni-warning-300:var(--ni-orange-300);
+  --ni-warning-400:var(--ni-orange-400);
+  --ni-warning-500:var(--ni-orange-500);
+  --ni-warning-600:var(--ni-orange-600);
+  --ni-warning-700:var(--ni-orange-700);
+  --ni-warning-800:var(--ni-orange-800);
+  --ni-warning-900:var(--ni-orange-900);
+}
+
+@font-face {
+  font-family: "niCons Solid";
+
+  font-style: normal;
+
+  font-weight: 900;
+
+  font-display: "block";
+
+  src: url("/fonts/solid-900.eot");
+
+  src: url("/fonts/solid-900.eot?#iefix") format("embedded-opentype"), 
+          url("/fonts/solid-900.woff2") format("woff2"), 
+          url("/fonts/solid-900.woff") format("woff"), 
+          url("/fonts/solid-900.ttf") format("truetype"), 
+          url("/fonts/solid-900.svg#nicons") format("svg");
+}
+
+@font-face {
+  font-family: "niCons Regular";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: "block";
+
+  src: url("/fonts/regular-400.eot");
+
+  src: url("/fonts/regular-400.eot?#iefix") format("embedded-opentype"), url("/fonts/regular-400.woff2") format("woff2"), url("/fonts/regular-400.woff") format("woff"), url("/fonts/regular-400.ttf") format("truetype"), url("/fonts/regular-400.svg#nicons") format("svg");
+}
+
+@font-face {
+  font-family: "niCons light";
+
+  font-style: normal;
+
+  font-weight: 300;
+
+  font-display: "block";
+
+  src: url("/fonts/light-300.eot");
+
+  src: url("/fonts/light-300.eot?#iefix") format("embedded-opentype"), url("/fonts/light-300.woff2") format("woff2"), url("/fonts/light-300.woff") format("woff"), url("/fonts/light-300.ttf") format("truetype"), url("/fonts/light-300.svg#nicons") format("svg");
+}
+
+@font-face {
+  font-family: "niCons brands";
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: "block";
+
+  src: url("/fonts/brands-400.eot");
+
+  src: url("/fonts/brands-400.eot?#iefix") format("embedded-opentype"), url("/fonts/brands-400.woff2") format("woff2"), url("/fonts/brands-400.woff") format("woff"), url("/fonts/brands-400.ttf") format("truetype"), url("/fonts/brands-400.svg#nicons") format("svg");
+}
+
+.mainCard{
+  /* main */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.cardContainer{
+  /* Container */
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .cardContainer {
+    margin-top: 1.25rem;
+  }
+}
+
+.eachCard{
+  /* each card */
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  --tw-shadow: -40px 40px 160px 0 rgb(0 0 0 / 2%), -8px 8px 15px 0 rgb(120 120 120 / 4%), 3px 3px 30px 0 rgb(0 0 0 / 4%);
+  --tw-shadow-colored: -40px 40px 160px 0 var(--tw-shadow-color), -8px 8px 15px 0 var(--tw-shadow-color), 3px 3px 30px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark .eachCard {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+/*-------------------------------------
+|   EvoCalendar with Tailwindcss 
+|--------------------------------------
+|   author  : Leat Sophat
+|   date    : 10-13-2022
+|   license : MIT
+*/
+
+/*======================================
+|   Main Layout
+|   mainClass   :   evoCalendar
+|=======================================
+|   Control Main Layout
+|   
+*/
+
+.evoCalendar {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+/*======================================
+|   Left Side Layout Sidebar
+|   mainClass   :   calendar-sidebar
+|=======================================
+|   Control everything on Left Sidebar
+|   
+*/
+
+.calendar-sidebar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  width: 13rem;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-right-width: 1px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+@media (min-width: 640px) {
+  .calendar-sidebar {
+    position: relative;
+  }
+}
+
+.calendar-year {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.month-list {
+  margin-top: 0.5rem;
+}
+
+.calendar-months {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-bottom: 0.75rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.calendar-months>* {
+  border-radius: 0.25rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.month {
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.sidebar-hide >.calendar-sidebar {
+  position: absolute;
+  left: -13rem;
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 640px) {
+  .sidebar-hide >.calendar-sidebar {
+    position: relative;
+    width: 2.5rem;
+  }
+}
+
+.sidebar-hide >.calendar-sidebar >#sidebarToggler {
+  position: absolute;
+  top: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .sidebar-hide >.calendar-sidebar >#sidebarToggler {
+    right: -13rem;
+  }
+}
+
+/*======================================
+|   Centered Content Layout Sidebar
+|   mainClass   :   calendar-inner
+|=======================================
+|   Control Calendar Table
+|   
+*/
+
+.calendar-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  padding: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.calendar-table {
+  width: 100%;
+}
+
+.calendar-inner table tr td {
+  height: 4rem;
+  padding: 0px;
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+.current-date {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Helvetica", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "-webkit-pictograph", "Content", cursive, Arial;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.calendar-header>*:first-child {
+  color: rgba(var(--ni-danger-500));
+}
+
+.calendar-header>*first-child {
+  text-align: left !important;
+}
+
+.calendar-header>*:last-child {
+  color: rgba(var(--ni-warning-500));
+}
+
+.calendar-header-day {
+  height: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.calendar-body>*>.day {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
+.dark .calendar-body>*>.day {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.calendar-body>.calendar-day:first-child>.day {
+  color: rgba(var(--ni-danger-500));
+}
+
+.calendar-body>.calendar-day:last-child>.day {
+  color: rgba(var(--ni-warning-500));
+}
+
+.calendar-day {
+  height: 2.5rem;
+  width: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.day {
+  position: relative;
+  height: 100%;
+  min-height: 3rem;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.day:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.day:hover::after {
+  position: absolute;
+  left: 50%;
+  top: -0.25rem;
+  z-index: 0;
+  height: 2rem;
+  width: 2rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+.event-indicator {
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  gap: 0.25rem;
+}
+
+.event-indicator>.type-bullet {
+  display: none;
+}
+
+.event-indicator>.type-bullet:nth-child(1) {
+  display: block;
+}
+
+.event-indicator>.type-bullet:nth-child(2) {
+  display: block;
+}
+
+.event-indicator>.type-bullet:nth-child(3) {
+  display: block;
+}
+
+.type-bullet>div {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+}
+
+/*======================================
+|   Active Event
+|=======================================
+|   Control Event Point
+|   
+*/
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.day.calendar-active {
+  animation: bounce 1s infinite;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.day.calendar-active::after {
+  position: absolute;
+  left: 50%;
+  top: -0.25rem;
+  z-index: 0;
+  height: 2rem;
+  width: 2rem;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-radius: 9999px;
+  border-width: 1px;
+  border-color: transparent;
+  --tw-content: '';
+  content: var(--tw-content);
+}
+
+/*======================================
+|   Right Side Layout Sidebar
+|   mainClass   : calendar-events
+|=======================================
+|   Control everything on Right Sidebar
+|   
+*/
+
+.calendar-events {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 10;
+  height: 100%;
+  min-height: 551px;
+  width: 16rem;
+  flex-shrink: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-left-width: 1px;
+  padding: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+@media (min-width: 1280px) {
+  .calendar-events {
+    position: relative;
+  }
+}
+
+.event-header {
+  padding: 0.25rem;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Helvetica", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", "-webkit-pictograph", "Content", cursive, Arial;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 500 !important;
+}
+
+.event-list {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.event-list>.event-container {
+  padding: 0.5rem;
+}
+
+.event-container {
+  position: relative;
+  display: flex;
+  min-width: 215px;
+  gap: 0.5rem;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.event-empty >p {
+  font-size: 14px;
+}
+
+.event-hide>.calendar-events {
+  width: 0px;
+  --tw-translate-x: 16rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.event-title {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem !important;
+  line-height: 1.5rem !important;
+  font-weight: 500 !important;
+}
+
+.event-desc {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.event-icon {
+  margin-top: 0.5rem;
+  display: flex;
+  height: 0.75rem;
+  width: 0.75rem;
+  flex-shrink: 0;
+}
+
+.event-icon >dot-icon {
+  display: flex;
+  height: 0.75rem;
+  width: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-event {
+  position: absolute;
+  top: -0.75rem;
+  right: 0.5rem;
+  max-width: 3rem;
+  border-radius: 9999px;
+  border-width: 1px;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  font-size: 12px;
+  line-height: .75rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+/*======================================
+|   Buttons
+|   mainClass   : icon-button
+|=======================================
+|   Control all Buttons
+|   
+*/
+
+.icon-button {
+  display: flex;
+  height: 1.75rem;
+  width: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  background-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Change Year Buttons */
+
+.chevron-arrow-left::before {
+  font-family: "niCons light";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-content: "\f104";
+  content: var(--tw-content);
+}
+
+.chevron-arrow-right::before {
+  font-family: "niCons light";
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  --tw-content: "\f105";
+  content: var(--tw-content);
+}
+
+/* Even Toggle  */
+
+#eventListToggler {
+  position: absolute;
+  right: 14.8rem;
+  top: 0.75rem;
+  z-index: 10;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.event-hide >#eventListToggler {
+  right: 0.75rem;
+  top: 0.75rem;
+  z-index: 10;
+}
+
+/* Event Toggle Button right sidebar */
+
+#sidebarToggler {
+  position: absolute;
+  top: 0.75rem;
+  right: -2.5rem;
+  display: flex;
+  height: 1.75rem;
+  width: 1.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+/*======================================
+|   Outline Style
+|   mainClass   :calendar-outline
+|=======================================
+|   Control Color and Styling for Outline
+|   
+*/
+
+.calendar-outline .calendar-body, 
+.calendar-outline .calendar-header {
+  border-bottom-width: 1px;
+}
+
+.calendar-outline .calendar-body:first-child, 
+.calendar-outline .calendar-header:first-child {
+  border-left-width: 0px;
+}
+
+.calendar-outline .calendar-body>*, 
+.calendar-outline .calendar-header>* {
+  border-right-width: 1px;
+}
+
+.calendar-outline .month-list {
+  margin-top: 0px;
+}
+
+.calendar-outline .month {
+  border-radius: 0.375rem;
+  border-width: 1px;
+  border-color: transparent;
+}
+
+.calendar-outline .calendar-inner {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+.calendar-outline .calendar-inner>table>* {
+  border-width: 1px;
+}
+
+.calendar-outline .calendar-header {
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.calendar-outline .calendar-header>* {
+  border-top-width: 0px;
+}
+
+.calendar-outline .calendar-header>*first-child {
+  text-align: left !important;
+}
+
+/*======================================
+|   Color and Theme Mode
+|   mainClass   :Defualt,  calendar-outline
+|=======================================
+|   Control Color and Styling
+|   
+*/
+
+/* Defualt */
+
+.dark .evoCalendar, 
+.dark.evoCalendar {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+.dark .event-header {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.dark .calendar-header-day {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240 / var(--tw-text-opacity));
+}
+
+.dark .calendar-header-day:first-child {
+  color: rgba(var(--ni-danger-500));
+}
+
+.dark .calendar-header-day:last-child {
+  color: rgba(var(--ni-warning-500));
+}
+
+.dark .current-date {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .event-title {
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+
+.calendar-sidebar, 
+.calendar-inner, 
+.calendar-events {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .calendar-sidebar, .dark 
+.calendar-inner, .dark 
+.calendar-events {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+
+#sidebarToggler, 
+#eventListToggler, 
+.icon-button {
+  background-color: rgba(var(--ni-primary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#sidebarToggler:hover, 
+#eventListToggler:hover, 
+.icon-button:hover {
+  background-color: rgba(var(--ni-primary-600));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark #sidebarToggler, .dark 
+#eventListToggler, .dark 
+.icon-button {
+  border-color: transparent;
+  background-color: rgba(var(--ni-primary-500));
+}
+
+.dark #sidebarToggler:hover, .dark 
+#eventListToggler:hover, .dark 
+.icon-button:hover {
+  background-color: rgba(var(--ni-primary-700));
+}
+
+.active-month {
+  background-color: rgba(var(--ni-primary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.day.calendar-active {
+  color: rgba(var(--ni-primary-500));
+}
+
+.day.calendar-active::after {
+  content: var(--tw-content);
+  border-color: rgba(var(--ni-primary-500));
+}
+
+.calendar-year {
+  background-color: rgba(var(--ni-primary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.calendar-year>p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.dark .calendar-year>p {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.event-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.event-container:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark .event-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+
+.badge-event {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.dark .badge-event {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.dark .month {
+  --tw-text-opacity: 1;
+  color: rgb(203 213 225 / var(--tw-text-opacity));
+}
+
+.day:hover::after {
+  content: var(--tw-content);
+  border-color: rgba(var(--ni-primary-500));
+}
+
+/* calendar-outline */
+
+.calendar-outline .calendar-year {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: rgba(var(--ni-primary-500));
+}
+
+.calendar-outline .calendar-year>p {
+  color: rgba(var(--ni-primary-500));
+}
+
+.calendar-outline #sidebarToggler, 
+.calendar-outline #eventListToggler, 
+.calendar-outline .icon-button {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: rgba(var(--ni-primary-500));
+}
+
+.calendar-outline #sidebarToggler:hover, 
+.calendar-outline #eventListToggler:hover, 
+.calendar-outline .icon-button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.calendar-outline .month {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.calendar-outline .month:hover {
+  border-color: rgba(var(--ni-primary-200));
+}
+
+.calendar-outline .active-month {
+  border-width: 1px;
+  border-color: rgba(var(--ni-primary-500));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  color: rgba(var(--ni-primary-500));
+}
+
+.dark .calendar-outline .active-month {
+  --tw-border-opacity: 1;
+  border-color: rgb(100 116 139 / var(--tw-border-opacity));
+}
+
+.calendar-outline .calendar-header>*:first-child {
+  color: rgba(var(--ni-danger-500));
+}
+
+.calendar-outline .calendar-header>*:last-child {
+  color: rgba(var(--ni-warning-500));
+}
+
+.dark .event-desc, .dark .event-empty {
+  --tw-text-opacity: 1;
+  color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.button {
+  width: auto !important;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  border-color: transparent;
+  background-color: transparent;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  line-height: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.button.-outline-primary {
+  border-color: rgba(var(--ni-primary-500));
+  color: rgba(var(--ni-primary-500));
+}
+
+.button.-outline-primary:focus {
+  border-color: rgba(var(--ni-primary-600));
+}
+
+.dark .button.-outline-primary {
+  border-color: rgba(var(--ni-primary-800));
+  color: rgba(var(--ni-primary-800));
+}
+
+.button.-outline-secondary {
+  border-color: rgba(var(--ni-secondary-500));
+  color: rgba(var(--ni-secondary-500));
+}
+
+.button.-outline-secondary:focus {
+  border-color: rgba(var(--ni-secondary-600));
+}
+
+.dark .button.-outline-secondary {
+  border-color: rgba(var(--ni-secondary-800));
+  color: rgba(var(--ni-secondary-800));
+}
+
+.button.-outline-warning {
+  border-color: rgba(var(--ni-warning-500));
+  color: rgba(var(--ni-warning-500));
+}
+
+.button.-outline-warning:focus {
+  border-color: rgba(var(--ni-warning-600));
+}
+
+.dark .button.-outline-warning {
+  border-color: rgba(var(--ni-warning-800));
+  color: rgba(var(--ni-warning-800));
+}
+
+.button.-outline-danger {
+  border-color: rgba(var(--ni-danger-500));
+  color: rgba(var(--ni-danger-500));
+}
+
+.button.-outline-danger:focus {
+  border-color: rgba(var(--ni-danger-600));
+}
+
+.dark .button.-outline-danger {
+  border-color: rgba(var(--ni-danger-800));
+  color: rgba(var(--ni-danger-800));
+}
+
+.button.-outline-success {
+  border-color: rgba(var(--ni-success-500));
+  color: rgba(var(--ni-success-500));
+}
+
+.button.-outline-success:focus {
+  border-color: rgba(var(--ni-success-600));
+}
+
+.dark .button.-outline-success {
+  border-color: rgba(var(--ni-success-800));
+  color: rgba(var(--ni-success-800));
+}
+
+.button.-outline-info {
+  border-color: rgba(var(--ni-info-500));
+  color: rgba(var(--ni-info-500));
+}
+
+.button.-outline-info:focus {
+  border-color: rgba(var(--ni-info-600));
+}
+
+.dark .button.-outline-info {
+  border-color: rgba(var(--ni-info-800));
+  color: rgba(var(--ni-info-800));
+}
+
+.button.-primary {
+  background-color: rgba(var(--ni-primary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-primary:hover {
+  background-color: rgba(var(--ni-primary-600));
+}
+
+.button.-primary:focus {
+  background-color: rgba(var(--ni-primary-600));
+}
+
+.dark .button.-primary {
+  background-color: rgba(var(--ni-primary-500));
+}
+
+.button.-secondary {
+  background-color: rgba(var(--ni-secondary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-secondary:hover {
+  background-color: rgba(var(--ni-secondary-600));
+}
+
+.button.-secondary:focus {
+  background-color: rgba(var(--ni-secondary-600));
+}
+
+.dark .button.-secondary {
+  background-color: rgba(var(--ni-secondary-500));
+}
+
+.button.-warning {
+  background-color: rgba(var(--ni-warning-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-warning:hover {
+  background-color: rgba(var(--ni-warning-600));
+}
+
+.button.-warning:focus {
+  background-color: rgba(var(--ni-warning-600));
+}
+
+.dark .button.-warning {
+  background-color: rgba(var(--ni-warning-500));
+}
+
+.button.-danger {
+  background-color: rgba(var(--ni-danger-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-danger:hover {
+  background-color: rgba(var(--ni-danger-600));
+}
+
+.button.-danger:focus {
+  background-color: rgba(var(--ni-danger-600));
+}
+
+.dark .button.-danger {
+  background-color: rgba(var(--ni-danger-500));
+}
+
+.button.-success {
+  background-color: rgba(var(--ni-success-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-success:hover {
+  background-color: rgba(var(--ni-success-600));
+}
+
+.button.-success:focus {
+  background-color: rgba(var(--ni-success-600));
+}
+
+.dark .button.-success {
+  background-color: rgba(var(--ni-success-500));
+}
+
+.button.-info {
+  background-color: rgba(var(--ni-info-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-info:focus {
+  background-color: rgba(var(--ni-info-600));
+}
+
+.dark .button.-info {
+  background-color: rgba(var(--ni-info-500));
+}
+
+.button.-gradient-primary {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-primary-400));
+  --tw-gradient-to: rgb(var(--ni-primary-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-primary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-primary:hover {
+  --tw-gradient-from: rgba(var(--ni-primary-500));
+  --tw-gradient-to: rgb(var(--ni-primary-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-primary-500));
+}
+
+.button.-gradient-secondary {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-secondary-400));
+  --tw-gradient-to: rgb(var(--ni-secondary-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-secondary-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-secondary:hover {
+  --tw-gradient-from: rgba(var(--ni-secondary-500));
+  --tw-gradient-to: rgb(var(--ni-secondary-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-secondary-500));
+}
+
+.button.-gradient-warning {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-warning-400));
+  --tw-gradient-to: rgb(var(--ni-warning-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-warning-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-warning:hover {
+  --tw-gradient-from: rgba(var(--ni-warning-500));
+  --tw-gradient-to: rgb(var(--ni-warning-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-warning-500));
+}
+
+.button.-gradient-danger {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-danger-400));
+  --tw-gradient-to: rgb(var(--ni-danger-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-danger-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-danger:hover {
+  --tw-gradient-from: rgba(var(--ni-danger-500));
+  --tw-gradient-to: rgb(var(--ni-danger-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-danger-500));
+}
+
+.button.-gradient-success {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-success-400));
+  --tw-gradient-to: rgb(var(--ni-success-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-success-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-success:hover {
+  --tw-gradient-from: rgba(var(--ni-success-500));
+  --tw-gradient-to: rgb(var(--ni-success-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-success-500));
+}
+
+.button.-gradient-info {
+  border-style: none;
+  --tw-gradient-from: rgba(var(--ni-info-400));
+  --tw-gradient-to: rgb(var(--ni-info-400) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-info-500));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.button.-gradient-info:hover {
+  --tw-gradient-from: rgba(var(--ni-info-500));
+  --tw-gradient-to: rgb(var(--ni-info-500) / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: rgba(var(--ni-info-500));
+}
+
+.hover\:shadow-xl:hover {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
