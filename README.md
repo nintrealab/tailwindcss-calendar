@@ -9,8 +9,6 @@ Styling
 ```html
 <!-- Calendar Styling -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss-calendar/dist/css/calendar.css">
-<!-- Icon Required -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss-calendar/dist/css/nintrea@icons.css">
 ```
 Caledar Declare
 ```html
