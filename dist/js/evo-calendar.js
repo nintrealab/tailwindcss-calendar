@@ -959,10 +959,10 @@
             }
         }
 
-        if (windowW <= _.$breakpoints.tablet && windowW > _.$breakpoints.mobile) {
-            hasSidebar = !_.$elements.calendarEl.hasClass('sidebar-hide');
-            hasEvent = !_.$elements.calendarEl.hasClass('event-hide');
-            if (hasSidebar && hasEvent) _.toggleEventList();
+        if (windowW <= _THIS.$breakpoints.tablet && windowW > _THIS.$breakpoints.mobile) {
+            hasSidebar = !_THIS.$elements.calendarEl.hasClass('sidebar-hide');
+            hasEvent = !_THIS.$elements.calendarEl.hasClass('event-hide');
+            if (hasSidebar && hasEvent) _THIS.toggleEventList();
         }
     };
 

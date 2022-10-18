@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href='css/nintrea@icons.css'>
     <link rel="stylesheet" href='css/calendar.css'>
     <title>Tailwindcss Calendar</title>
 
@@ -60,28 +59,224 @@
     }
 </script>
 <body>
-    <div class="mainCard">
-        <div class="cardContainer grid-cols-1">
-            <div class="eachCard col-span-1 p-0 !shadow-none bg-transparent">
-                <div class="max-w-6xl flex flex-col gap-4 items-center justify-center min-h-[calc(100vh_-_7rem)] mx-auto">
-                    <h1 class="text-2xl font-medium text-left">Tailwindcss Calendar with EvoCalendar</h1>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
-                            <img src="https://telegra.ph/file/2d8a1cef611babc8ee0c3.png" class="object-cover" alt="">
-                        </div>
-                        <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
-                            <img src="https://telegra.ph/file/2fb0581c7f86c4e7a219c.png" class="object-cover" alt="">
-                        </div>
+    <div class="relative">
+        <div class="relative">
+
+            <div class="sticky top-0 flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                <div class="flex items-center justify-between">
+                    <h1 class="text-xl sm:text-2xl font-medium px-4 py-3 ">Tailwindcss Calendar</h1>
+                </div>
+
+            </div>
+
+            <div class="dark:divide-slate-200/5 max-w-6xl mx-auto py-10"> 
+                <div class="flex flex-wrap gap-4 py-5">
+                    <a href="https://github.com/nintrealab/tailwindcss-calendar" target="_blank">
+                        <img class="w-32" src="https://camo.githubusercontent.com/00408c5041695ccb70278fe8898714c951988b04f66263c169ba85fa4b82b291/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4c6f676f2e706e67" alt="">
+                    </a>
+                    <a href="https://www.npmjs.com/package/tailwindcss-calendar" target="_blank">
+                        <img class="w-32" src="https://raw.githubusercontent.com/npm/logos/cc343d8c50139f645d165aedfe4d375240599fd1/npm%20logo/npm-logo-black.svg" alt="">
+                    </a>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=shield"/>
+                    <img src="https://badge.fury.io/js/tailwindcss-calendar.svg"/>
+                    <img src="https://img.shields.io/npm/dt/tailwindcss-calendar"/>
+                </div>
+
+                <p class="py-3 border-t-transparent"> 
+                    <span class="w-10"></span>
+                    <span class="font-doc">This tailwindcss-calendar package modified by <a href="https://github.com/pphatDev"><code class="text-sky-500">Sophat Leat</code></a> using <a href="https://github.com/tailwindlabs"><code class="text-sky-500">TailwindCss</code></a> Style and <a href="https://github.com/edlynvillegas/evo-calendar"><code class="text-sky-500">EvoCanlendar</code></a> for JS. I have tried to search for TailwindCss-Calendar but not I can find what I want. So I decided to build this this small package and Publish it to NodeJS Server <a href="https://www.npmjs.com/"><code>(npm)</code></a>.</span>
+                </p>
+
+            </div>
+        </div>
+        <div class="relative">
+
+            <div class="sticky top-0 flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                <div class="max-w-6xl w-full">
+                    <h1 class="text-xl sm:text-2xl font-medium flex justify-between px-4 py-3 ">Installation</h1>
+                </div>
+            </div>
+
+            <div class="divide-y dark:divide-slate-200/5 max-w-6xl mx-auto">                 
+                <div class="grid grid-cols-1 gap-4 py-10">
+                    <p class="font-doc">To install Package let's follow the these steps</p>
+                    <div class="flex-col flex gap-4">
+                        <a href="https://github.com/nintrealab/tailwindcss-calendar" target="_blank">
+                            <img class="w-32" src="https://camo.githubusercontent.com/00408c5041695ccb70278fe8898714c951988b04f66263c169ba85fa4b82b291/68747470733a2f2f6769746875622e6769746875626173736574732e636f6d2f696d616765732f6d6f64756c65732f6c6f676f735f706167652f4769744875622d4c6f676f2e706e67" alt="">
+                        </a>
+                        <p>Full HTML Project</p>
+
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">git clone https://github.com/nintrealab/tailwindcss-calendar.git</code></pre>
+                        <p>go to project directory</p>
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">cd tailwindcss-calendar</code></pre>
+                    </div>  
+
+                    <div class="flex-col flex gap-4 border-t pt-5">
+                        <a href="https://www.npmjs.com/package/tailwindcss-calendar" target="_blank">
+                            <img class="w-32" src="https://raw.githubusercontent.com/npm/logos/cc343d8c50139f645d165aedfe4d375240599fd1/npm%20logo/npm-logo-black.svg" alt="">
+                        </a>
+                        <p>Full HTML Project</p>
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">npm install -D tailwindcss-calendar
+// OR
+npm i -D tailwindcss-calendar</code></pre>
+                        <p>TailwindCss Calendar Source</p>
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">cd node_modules/tailwindcss-tailwindcss/src</code></pre>
+                        <p>Compiled Style TailwindCss Calendar Source</p>
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">cd node_modules/tailwindcss-tailwindcss/dist</code></pre>
+                    </div>  
+
+                    <div class="flex-col flex gap-4 border-t pt-5">
+                        <h1 class="text-xl"><a href="https://www.jsdelivr.com/package/npm/tailwindcss-calendar" target="_blank" class="text-sky-500">CDN</a></h1>
+                        <p class="border-l-4 border-sky-500 pl-5">Note: CDN Can't Customize New CSS</p>
+                        <p>Basic HTML</p>
+                        <pre class="p-5 border rounded-md"><code class="font-jetBrain">&lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;UTF-8&quot;&gt;
+        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+        &lt;title&gt;TailwindCss Calendar&lt;/title&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/tailwindcss-calendar/dist/css/calendar.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        
+        &lt;div 
+            id=&quot;evoCalendar&quot; 
+            class=&quot;evoCalendar border w-full dark&quot;
+        &gt;&lt;/div&gt;
+
+        &lt;!-- Requried Jquery --&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;https://cdn.jsdelivr.net/npm/tailwindcss-calendar/dist/js/evo-calendar.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- Options --&gt;
+        &lt;script&gt;
+            $(&quot;#evoCalendar&quot;).evoCalendar(
+            {
+                language                : 'en', // km
+                sidebarDisplayDefault   : true, // false
+                calendarEvents: [
+                    {
+                        id          : '1',              // Event's ID (required)
+                        name        : &quot;New Year&quot;,       // Event name (required)
+                        date        : &quot;October/1/2022&quot;, // Event date (required)
+                        type        : &quot;holiday&quot;,        // Event type (required)
+                        everyYear   : true,             // Same event every year (optional)
+                        color       : &quot;pink&quot;            // optional
+                    },
+                    {
+                        id          : '2',
+                        name        : &quot;Event Name Event Name Event Name&quot;,
+                        date        : [&quot;October/13/2022&quot;, &quot;October/15/2022&quot;], // Date range
+                        description : &quot;Description&quot;,
+                        badge       : &quot;3Days&quot;,
+                        type        : &quot;event&quot;,
+                        color       : &quot;red&quot;
+                    }
+                ]
+            });
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                        
+                    </div>                     
+                </div>
+
+            </div>
+        </div>
+        <div class="relative">
+            <div class="sticky top-0 z-[999] flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                
+                <div class="max-w-6xl w-full flex justify-between px-4 py-3 ">
+                    <h1 class="text-xl sm:text-2xl font-medium">Theme</h1>
+                </div>
+
+            </div>
+
+            <div class="divide-y dark:divide-slate-200/5 max-w-6xl mx-auto">                 
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 py-10">
+                    <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
+                        <h1 class="text-xl font-medium pb-5">Light</h1>
+                        <img src="https://telegra.ph/file/2d8a1cef611babc8ee0c3.png" class="object-cover border rounded-lg" alt="">
                     </div>
-                    <h1 class="text-2xl font-medium text-left">Demo Calendar</h1>
-                    
+                    <div class="col-span-1 shadow-md p-5 rounded-md hover:shadow-xl transition-all duration-400">
+                        <h1 class="text-xl font-medium pb-5">Dark</h1>
+                        <img src="https://telegra.ph/file/2fb0581c7f86c4e7a219c.png" class="object-cover border rounded-lg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="relative">
+            <div class="sticky top-0 z-[99] flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                <div class="max-w-6xl w-full flex justify-between px-4 py-3 ">
+                    <h1 class="text-xl sm:text-2xl font-medium">Demo Calendar</h1>
                     <div>
                         <button class="button -primary" onclick="theme()">Theme</button>
                     </div>
+                </div>
+            </div>
+            <div class="divide-y dark:divide-slate-200/5 max-w-6xl mx-auto">
+                <div class="flex flex-col gap-4 items-center justify-center w-full py-10">
                     <div id="evoCalendar" class="evoCalendar border w-full dark"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="relative">
+            <div class="sticky top-0 flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                <div class="max-w-6xl w-full flex justify-between px-4 py-3 ">
+                    <h1 class="text-xl sm:text-2xl font-medium">License MIT</h1>
+                </div>
+            </div>
+            <div class="divide-y dark:divide-slate-200/5 max-w-6xl mx-auto">
+                <div class="flex gap-4 items-center justify-center w-full py-10">
+
+                    <pre class="w-full text-sm font-jetBrain overflow-auto">
+                        <code>
+Copyright (c) 2022 Sophat Leat and NINTREALAB
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+                        </code>
+                    </pre>
                 </div>
             </div>
         </div>
+
+        <div class="relative">
+            <div class="sticky top-0 flex items-center justify-center font-semibold text-sm text-slate-900 dark:text-slate-200 bg-slate-50/90 dark:bg-slate-700/90 backdrop-blur-sm ring-1 ring-slate-900/10 dark:ring-black/10">
+                <div class="max-w-6xl w-full flex justify-between px-4 py-3 ">
+                    <h1 class="text-xl sm:text-2xl font-medium">License Scan</h1>
+                </div>
+            </div>
+            <div class="divide-y dark:divide-slate-200/5 max-w-6xl mx-auto">
+                <div class="flex gap-4 items-center justify-start w-full py-10">
+                    <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=large" alt="">
+                </div>
+            </div>
+        </div>
+
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>

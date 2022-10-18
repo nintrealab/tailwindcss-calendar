@@ -29,9 +29,6 @@ module.exports = {
             sans: ['ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont','"Segoe UI"','Roboto','"Helvetica Neue"','Arial','"Noto Sans"','sans-serif','"Apple Color Emoji"','"Segoe UI Emoji"','"Segoe UI Symbol"','"Noto Color Emoji"'],
             doc: ['"Source Sans Pro"','sans-serif','Inter var','ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont','"Segoe UI"','Roboto',"'Helvetica Neue'",'Arial',"'Noto Sans'",'sans-serif',"'Apple Color Emoji'","'Segoe UI Emoji'","'Segoe UI Symbol'","'Noto Color Emoji'",'"Noto Serif Khmer"','serif'],
             jetBrain: ['"JetBrains Mono"','monospace'],
-            iconL: ['"niCons light"'],
-            iconR: ['"niCons Regular"'],
-            iconS: ['"niCons Solid"'],
             "openSans":['"Open Sans"','sans-serif'],
             "roboto":['"Roboto"','sans-serif']
         },
