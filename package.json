@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-calendar",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "tailwindcss calendar ui using evo-calendar ",
   "main": "index.js",
   "scripts": {
