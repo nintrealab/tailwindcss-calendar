@@ -1,7 +1,12 @@
-# tailwindcss-calendar [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar?ref=badge_shield)
+# tailwindcss-calendar [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fnintrealab%2Ftailwindcss-calendar?ref=badge_shield)  [![npm version](https://badge.fury.io/js/tailwindcss-calendar.svg)](https://badge.fury.io/js/tailwindcss-calendar)  [![Downloads](https://img.shields.io/npm/dt/tailwindcss-calendar)](https://www.npmjs.com/package/git-stats) 
 This `tailwindcss-calendar` package modified by [Sophat Leat](https://github.com/pphatDev) using [TailwindCss](https://github.com/tailwindlabs/tailwindcss) Style and [EvoCanlendar](https://github.com/edlynvillegas/evo-calendar) for JS.
 I have tried to search for TailwindCss-Calendar but not I can find what I want.  So I decided to build this this small package and Publish it to NodeJS Server [`(npm)`](https://www.npmjs.com/).
 
+
+
+
+
+ 
 # Installation
 To install Package let's follow the these steps
 
